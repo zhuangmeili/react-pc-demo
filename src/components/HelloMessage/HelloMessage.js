@@ -1,10 +1,12 @@
 import React,{Component} from 'react';
-import './HelloMessage.css'
+import CSSModules from 'react-css-modules';
+import styles from './HelloMessage.css'
+
 class HelloMessage extends Component {
   render() {
     return (
       <div>
-        <header className="helloHeader"> Hello this is my first conponent!</header>
+        <header styleName='helloHeader'> Hello this is my first conponent!</header>
 
         <main >
           main
@@ -15,5 +17,4 @@ class HelloMessage extends Component {
     );
   }
 }
-
-export default  HelloMessage;
+export default CSSModules(HelloMessage, styles );
