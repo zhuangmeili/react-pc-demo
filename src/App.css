@@ -3,7 +3,10 @@
 .appLeft{ position: fixed; left: 0; top: 0; width: 260px; height: 100%; background: #f7f7f7; border-right: 1px solid #ddd; overflow-y: auto; }
 .appList{ width: 100%; }
 .appList li{ font-size: 16px; text-align: center; height: 50px; line-height: 50px; border-bottom: 1px solid #ddd;}
-.appRight{  margin-left: 300px;}
+.appRight{  padding-left: 280px; padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;}
 .appList li .link{ display: block; height: 50px; line-height: 50px;}
 .appList li .link.cur{ color: #1aad19; font-weight: bold;}
 

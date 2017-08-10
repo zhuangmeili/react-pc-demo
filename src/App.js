@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route,Switch,Redirect,NavLink} from 'react-router-dom'
+import {BrowserRouter as Router,Route,NavLink} from 'react-router-dom'
 import './App.css';
 import HomePage from './pages/HomePage/HomePage';
 import MinePage from './pages/MinePage/MinePage';
@@ -19,11 +19,8 @@ class App extends Component {
           </aside>
           {/* right */}
           <main className="appRight">
-            <Switch>
-              <Redirect  from="/" to="/home"></Redirect>
-              <Route key="1"  path="/home" component={MinePage}></Route>
-            </Switch>
-            <Route  key="2" path="/home" component={HomePage}></Route>
+            <Route key="1"  path="/home" component={HomePage  }></Route>
+            <Route  key="2" path="/mine" component={MinePage}></Route>
           </main>
         </div>
       </Router>
