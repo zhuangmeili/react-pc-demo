@@ -1,0 +1,4 @@
+.header{ font-size: 20px; padding: 20px 0 ;}
+.btnDefault{ color: #fff; height: 35px; line-height: 35px; border: 1px solid #029400; border-radius: 3px;
+    background: #1aad19; padding: 0 20px; font-size: 16px;}
+.box{ width: 100px; height: 100px; background: pink;  }

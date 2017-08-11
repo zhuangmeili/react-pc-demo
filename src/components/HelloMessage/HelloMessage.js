@@ -3,6 +3,7 @@ import CSSModules from 'react-css-modules';
 import styles from './HelloMessage.css'
 
 class HelloMessage extends Component {
+
   render() {
     return (
       <div>
