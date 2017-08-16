@@ -4,47 +4,47 @@ import styles from './ParentPage.css';
 
 import './ParentPage.css';
 
-import Child from '../../components/Child/Child';
+import Dollar from '../../components/Dollar/Dollar';
 
 
 class ParentPage extends Component {
   constructor(props){
     super(props);
     this.state={
-      //温度
-      formTemper:''
+      dollar:'',
+      yuan:''
     }
 
   }
   //event
-  handleChange=(event)=>{
-    console.log(event.target.value);
+  dollarInput=(value)=>{
     this.setState({
-      formTemper:event.target.value
-    })
-  };
-
+      dollar:  value,
+      yuan:   value === '' ? '' : value * 6.7951
+    });
+  }
+  yuanInput=(value)=>{
+    this.setState({
+      dollar: value === '' ? '' : value * 0.1472,
+      yuan: value,
+    });
+  }
 
   render() {
-    const formTemper=this.state.formTemper;
+
     return (
       <div className="">
-        <header styleName="header">组件之间数据</header>
+        <header styleName="header">组件状态提升</header>
         <main styleName="container">
-          <form >
-            <br/>
-            输入温度:
-            <br/>
-            <input type="text" value={formTemper} styleName="formInp" onChange={this.handleChange} />
-
-            <br/>
-            <br/>
-
-            组件如下：
-            <Child celsius={parseFloat(formTemper)}/>
-          </form>
+          美元
+          <br/>
+          <Dollar type = {'d'} dollarChange = {this.dollarInput} money = {this.state.dollar}/>
+          <br/>
+          <br/>
+          人民币
+          <br/>
+          <Dollar type = {'y'} dollarChange = {this.yuanInput} money = {this.state.yuan}/>
         </main>
-
       </div>
     );
   }

@@ -1,7 +1,7 @@
 .divider{ border-top: 1px solid #ddd; margin: 10px 0;}
 .passage{
 
-    font-size: 20px; line-height: 35px; height: 70px;
+    font-size: 14px; line-height: 35px; height: 70px;
     overflow: hidden;
 text-overflow: ellipsis;
     display: -webkit-box;
