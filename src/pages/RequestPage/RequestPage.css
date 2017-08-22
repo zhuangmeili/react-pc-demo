@@ -1,0 +1,4 @@
+.line{ display: flex; display: -webkit-flex; align-items: center; -webkit-align-items: center; font-size: 14px;}
+.title{ width: 150px; text-align: right; line-height: 35px; height: 35px; margin-right:20px; color: #888;}
+.avator{ width: 100px; height: 100px; border-radius: 50%;  flex:1;}
+

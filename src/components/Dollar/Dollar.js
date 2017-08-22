@@ -8,16 +8,14 @@ class Dollar extends Component {
     super(props);
   }
   handleChange=(event)=>{
-    //将组件的值通过 props传递给父组件；
+    //将组件的值通过 props传递给父组件；dollarChange ,
     this.props.dollarChange(event.target.value);
     console.log("onchange  child!");
   }
 
   render() {
+    //子组件 接收属性money
     const money=this.props.money;
-    // const yuan=this.props.yuan;
-    // const text=this.props.type=='d'?"美元":"人民币";
-
     return (
       <div>
         <input styleName="formInp" type="text" value={money} onChange={this.handleChange}/>
@@ -25,6 +23,10 @@ class Dollar extends Component {
       </div>
     )
   }
+  componentDidMount(){
+
+  }
+
 }
 
 export default CSSModules(Dollar, styles);
