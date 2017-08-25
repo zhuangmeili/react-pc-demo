@@ -15,6 +15,7 @@ class FormPage extends Component {
 
     const value=target.value;
     console.log("value:"+value);
+    //这里name是变量所以要用[]括起来
     this.setState({
       [name]:value,
     });

@@ -1,6 +1,7 @@
 .header{ font-size: 20px; padding: 20px 0 ;}
 .listItem{height: 35px; line-height: 35px; font-size: 16px; border-bottom: 1px solid #ddd;}
-
+.btnClick{ background-color: #1aad19; color: #fff; height: 35px; line-height: 35rpx; border-radius: 2px;
+border: 1px solid #029400; padding: 0 20px;}
 
 
 

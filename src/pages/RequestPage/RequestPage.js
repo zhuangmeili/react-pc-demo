@@ -22,9 +22,12 @@ class RequestPage extends Component{
     })
 
   }
-
-  componentWillMount(){
+  //获得数据 在 DidMount中获取
+  componentDidMount(){
     this.getBookData();
+  }
+  componentWillUnmount(){
+
   }
   render(){
     var userMsg=(this.state.userMsg) ;
