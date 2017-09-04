@@ -9,9 +9,10 @@ class StateTimer extends Component{
     //super用在类的继承中，可以调用父类的构造器
     //super做的事情就是生成一个this；
     super(props);
-    this.state={date:new Date(),counter:0};
+    this.state={date:new Date(),counter:0,isShow:true};
 
   }
+
 
   chageTime(){
     this.setState({ date:new Date() });
@@ -43,6 +44,15 @@ class StateTimer extends Component{
 
         <br/>
         counter {this.state.counter}
+
+        {
+          this.state.isShow?(<div styleName="helloColor">
+            显示状态
+          </div>):""
+        }
+
+
+
        </div>
     )
   }

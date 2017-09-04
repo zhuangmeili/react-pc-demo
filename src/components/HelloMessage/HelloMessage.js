@@ -11,6 +11,13 @@ class HelloMessage extends Component {
 
         <main >
           main
+          <br/>
+          <div styleName="helloColor">
+            {this.props.title}
+            <br/>
+            {this.props.name}
+          </div>
+
         </main>
         <footer>footer</footer>
 
