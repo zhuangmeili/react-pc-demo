@@ -12,6 +12,8 @@ import LiftPage from './pages/LiftPage/LiftPage';
 import FormPage from './pages/FormPage/FormPage';
 import ParentPage from './pages/ParentPage/ParentPage';
 import RequestPage from './pages/RequestPage/RequestPage';
+import TestPage from './pages/TestPage/TestPage';
+
 class App extends Component {
   render() {
     return (
@@ -28,6 +30,8 @@ class App extends Component {
               <li><NavLink styleName="link" activeClassName="cur" to="/lift">LiftPage</NavLink></li>
               <li><NavLink styleName="link" activeClassName="cur" to="/parent">Parent</NavLink></li>
               <li><NavLink styleName="link" activeClassName="cur" to="/request">Request</NavLink></li>
+              <li><NavLink styleName="link" activeClassName="cur" to="/test">TestPage</NavLink></li>
+
             </ul>
           </aside>
           {/* right */}
@@ -40,7 +44,7 @@ class App extends Component {
             <Route  path="/lift" component={LiftPage}></Route>
             <Route  path="/parent" component={ParentPage}></Route>
             <Route  path="/request" component={RequestPage}></Route>
-
+            <Route  path="/test" component={TestPage}></Route>
           </main>
         </div>
       </Router>

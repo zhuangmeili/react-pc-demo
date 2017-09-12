@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './HomePage.css';
-import { getNameMixin } from '../../mixins/getNameMixin'
 
 //其他子组件
 import HelloMessage from '../../components/HelloMessage/HelloMessage';
