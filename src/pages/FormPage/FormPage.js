@@ -42,6 +42,8 @@ class FormPage extends Component {
             <br/>
             <input type="text" name="formName" styleName="formInp" value={this.state.formName} onChange={this.handleChange} />
 
+            {/* boolean 属性的设置*/}
+            <input type="text" autoFocus={true}/>
             <br/>
             <br/>
             <label>
