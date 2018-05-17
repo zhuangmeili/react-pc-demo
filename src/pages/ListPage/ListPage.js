@@ -9,9 +9,7 @@ class ListPage extends Component{
   render(){
     const number=["item1","item2","item3","item4"];
     const listItems=number.map((item,index)=>
-      (<li key={index} styleName="listItem">
-        {item}
-      </li>)
+      <li key={index} styleName="listItem">{item}</li>
     );
     return (
       <div>

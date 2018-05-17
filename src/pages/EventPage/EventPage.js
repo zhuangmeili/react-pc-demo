@@ -10,11 +10,9 @@ class EventPage extends Component {
     //this.toggleEvent = this.toggleEvent.bind(this);
   }
   toggleEvent=()=>{
-    this.setState(function (prevState) {
-      return{
-        isShow:!prevState.isShow
-      }
-    })
+    this.setState((prevState)=>({
+      isShow:!prevState.isShow
+    }));
   }
   componentDidMount(){
 

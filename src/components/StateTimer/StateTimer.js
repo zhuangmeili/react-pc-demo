@@ -16,11 +16,17 @@ class StateTimer extends Component{
 
   chageTime(){
     this.setState({ date:new Date() });
-    this.setState(function(prevState){
+    // 方案一
+    /*this.setState(function(prevState){
       return {
         counter:prevState.counter+5
       }
-    });
+    });*/
+
+    // 方案二 箭头函数
+    this.setState((prevState, props)=>({
+      counter:prevState.counter+5
+    }));
   }
   //DOM生成之后
   componentDidMount(){

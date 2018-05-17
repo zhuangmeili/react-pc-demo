@@ -26,10 +26,15 @@ class LiftPage extends Component{
       <div>
         <header style={myStyle}>This is ListPage</header>
         <main>
+          {/* 正常 state */}
           clickCount: {this.state.clickCount};
           <br/>
           <br/>
           <button styleName="btnClick" onClick={this.addCountFn}>点击增加</button>
+
+          <br/>
+          <br/>
+          {/* 提升 state*/}
 
         </main>
       </div>
