@@ -9,3 +9,9 @@
     padding: 0 20px;}
 .content{ font-size: 14px;
     color: #666; padding: 20px;}
+.inputTxt{
+    height: 35px;
+    width: 200px; }
+.button{ background: #029400;
+    color: #fff; font-size: 14px;line-height: 35px;
+    padding: 0 12px; border-radius: 4px;}

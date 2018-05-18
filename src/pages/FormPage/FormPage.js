@@ -35,6 +35,10 @@ class FormPage extends Component {
     return (
       <div className="">
         <header styleName="header">This is FormPage</header>
+        <p>
+          注意：表单默认值：使用 defaultValue=""
+          type='checkbox'  type='radio' 使用defaultChecked
+        </p>
         <main styleName="container">
           <form onSubmit={this.handleSubmit}>
             <br/>
