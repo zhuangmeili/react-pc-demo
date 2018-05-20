@@ -13,6 +13,7 @@ import FormPage from './pages/FormPage/FormPage';
 import ParentPage from './pages/ParentPage/ParentPage';
 import RequestPage from './pages/RequestPage/RequestPage';
 import TestPage from './pages/TestPage/TestPage';
+import ReduxPage from './pages/ReduxPage/ReduxPage';
 
 class App extends Component {
   render() {
@@ -31,6 +32,7 @@ class App extends Component {
               <li><NavLink styleName="link" activeClassName="cur" to="/parent">Parent</NavLink></li>
               <li><NavLink styleName="link" activeClassName="cur" to="/request">Request</NavLink></li>
               <li><NavLink styleName="link" activeClassName="cur" to="/test">TestPage</NavLink></li>
+              <li><NavLink styleName="link" activeClassName="cur" to="/redux">ReduxPage</NavLink></li>
 
             </ul>
           </aside>
@@ -45,6 +47,7 @@ class App extends Component {
             <Route  path="/parent" component={ParentPage}></Route>
             <Route  path="/request" component={RequestPage}></Route>
             <Route  path="/test" component={TestPage}></Route>
+            <Route  path="/redux" component={ReduxPage}></Route>
           </main>
         </div>
       </Router>
