@@ -1,2 +1,2 @@
 export const INCREMENT='INCREMENT';
-export const DECRAMENT='DECRAMENT';
+export const DECREMENT='DECREMENT';
