@@ -4,26 +4,29 @@ import styles from './Counter.css';
 
 
 import PropTypes from 'prop-types';
+import {decrement, increment} from "../../redux/actions/counter";
 //redux
 class Counter extends Component {
     constructor(props){
         super(props);
     }
 
-    componentDidMount(){
-        console.log(this.store);
-    }
     render() {
-        const { count}=this.props;
+        const { counter,increment,decrement}=this.props;
+        console.log(counter);
+        let count=counter.count;
         return (
             <div className="">
-                <p>点击了{count} 次</p>
+                <p>点击了{ count } 次</p>
+                <button onClick={increment}> add count + </button>
+                <br/><br/>
+                <button onClick={decrement}> minnus count - </button>
             </div>
         );
     }
 }
-Counter.propTypes={
-    count:PropTypes.number.isRequired
-}
+// Counter.propTypes={
+//     count:PropTypes.number.isRequired
+// }
 
 export default CSSMudules(Counter,styles);
