@@ -14,13 +14,10 @@ class Counter extends Component {
         console.log(this.store);
     }
     render() {
-        const { count,decrement,increment}=this.props;
+        const { count}=this.props;
         return (
             <div className="">
                 <p>点击了{count} 次</p>
-                <button onClick={increment}> add count + </button>
-                <br/><br/>
-                <button onClick={decrement}> minnus count - </button>
             </div>
         );
     }

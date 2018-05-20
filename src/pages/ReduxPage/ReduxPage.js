@@ -3,7 +3,7 @@ import CSSMudules from 'react-css-modules';
 import styles from './ReduxPage.css';
 
 // 组件引入
-import Counter from '../../components/Counter/Counter';
+import DoCounter from '../../container/DoCounter';
 
 // redux
 import {connect} from 'react-redux';
@@ -22,18 +22,12 @@ class ReduxPage extends Component {
         return (
             <div className="">
                 <h2> counter 组件 </h2>
-                <Counter count={5} increment={increment}></Counter>
+                <DoCounter></DoCounter>
             </div>
         );
     }
 }
-const  mapStateToProps=(state)=>({
-   count:state.count
-});
-const mapDispatchToProps=(dispatch)=>({
-    increment:()=> dispatch({ type: 'INCREMENT' }),
-    decrement:count=>dispatch(decrement(count))
-});
 
-export default connect(mapStateToProps,mapDispatchToProps)(ReduxPage);
-//export default CSSMudules(ReduxPage,styles);
+
+//export default connect(mapStateToProps,mapDispatchToProps)(ReduxPage);
+export default CSSMudules(ReduxPage,styles);
