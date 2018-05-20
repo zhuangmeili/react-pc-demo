@@ -31,7 +31,7 @@ const  mapStateToProps=(state)=>({
    count:state.count
 });
 const mapDispatchToProps=(dispatch)=>({
-    increment:count=> dispatch(increment(count)),
+    increment:()=> dispatch({ type: 'INCREMENT' }),
     decrement:count=>dispatch(decrement(count))
 });
 

@@ -3,18 +3,17 @@
  *
  *
  */
-// -
-const increment=()=>{
+import { INCREMENT, DECREMENT } from '../actionTypes'
+
+export const increment=()=>{
     return {
-        type:'INCREMENT'
+        type:INCREMENT
     }
-}
+};
 
-// +
-const decrement=()=> {
+export const decrement=()=> {
     return{
-        type:'DECREMENT'
+        type:DECREMENT
     }
-}
+};
 
-export { increment,decrement}

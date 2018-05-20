@@ -4,14 +4,15 @@
 * (previousState, action) => newState
 *
 * */
+import { INCREMENT, DECREMENT } from '../actionTypes'
 const initialState={
     count:0
 };
 const counterReducer=(state=initialState,action)=>{
   switch (action.type){
-      case 'INCREMENT':
+      case INCREMENT:
         return Object.assign({},state,{count:state.count+1});
-      case 'DECREMENT':
+      case DECREMENT:
           return Object.assign({},state,{count:state.count-1});
       default:
           return state;
