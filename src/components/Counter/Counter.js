@@ -16,11 +16,10 @@ class Counter extends Component {
         console.log(counter);
         let count=counter.count;
         return (
-            <div className="">
-                <p>点击了{ count } 次</p>
-                <button onClick={increment}> add count + </button>
-                <br/><br/>
-                <button onClick={decrement}> minnus count - </button>
+            <div styleName="couterWrap">
+                <p styleName="header">点击了 <span styleName="red">{ count } </span>  次</p>
+                <button styleName="button" onClick={increment}> add count + </button>
+                <button styleName="button" onClick={decrement}> minnus count - </button>
             </div>
         );
     }

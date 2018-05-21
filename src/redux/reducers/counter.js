@@ -11,10 +11,8 @@ const initialState={
 const counterReducer=(state=initialState,action)=>{
   switch (action.type){
       case INCREMENT:
-          console.log(state.count);
         return Object.assign({},state,{count:state.count+1});
       case DECREMENT:
-          console.log(state.count);
           return Object.assign({},state,{count:state.count-1});
       default:
           return state;
