@@ -1,0 +1,2 @@
+.list{ width: 400px;  display: flex;}
+.list li{ padding: 0 15px; background: #eee; line-height: 35px; text-align: center; flex: 1;  margin-right: 10px; font-size: 14px; border-radius: 2px; border:1px solid #ddd;}

@@ -17,7 +17,7 @@ import {
 } from '../actionTypes';
 
 // 添加todo
-let todoId = 0; //动态生成的id
+let todoId = 2001; //动态生成的id
 export const todoAdd = (text) => {
   return {
     type: TODO_ADD,
@@ -40,6 +40,14 @@ export const todoFilters=()=>{
     TODO_SHOW_DELETED:TODO_SHOW_DELETED,
     TODO_SHOW_NODELETE:TODO_SHOW_NODELETE
   }
+};
+
+// 设置过滤器
+export const todoSetFilter=(filter)=>{
+ return{
+   type:TODO_SET_FILTER,
+   filter
+ }
 };
 
 

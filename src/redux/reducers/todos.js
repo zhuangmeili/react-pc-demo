@@ -14,25 +14,24 @@ import {
   TODO_SHOW_NODELETE
 } from '../actionTypes';
 
-const initialState={
-  todos:[
+const initialState=[
     {id:1001,isDeleted:false, text:'item1'},
     {id:1002,isDeleted:true, text:'item2'},
     {id:1003,isDeleted:false, text:'item3'},
     {id:1004,isDeleted:true, text:'item4'},
     {id:1005,isDeleted:false, text:'item5'},
-    ],
-  filter:TODO_SHOW_ALL
-};
+];
 
 //所有的列表
 const todos = (state=initialState, action) => {
   switch (action.type) {
-    case 'TODO_TOGGLE':
-      let todos=state.todos.map(item=>{
+    case TODO_ADD:
+      return state;
+    case TODO_TOGGLE:
+      let newState=state.map(item=>{
         return item.id === action.id ? {...item,isDeleted:!item.isDeleted} : item;
       });
-      return Object.assign({},state,{todos:todos});
+      return newState;
     default :
       return state;
   }

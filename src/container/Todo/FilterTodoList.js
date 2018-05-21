@@ -19,7 +19,7 @@ const getFilterTodos=(todos,filter)=>{
 };
 const mapStateToProps = (state) => ({
   // 这里的 state.xxx(不同的reducers)
-  todos: getFilterTodos(state.todos.todos,state.todos.filter)
+  todos: getFilterTodos(state.todos,state.filter)
 });
 
 const mapDispatchToProps = (dispatch) => ({

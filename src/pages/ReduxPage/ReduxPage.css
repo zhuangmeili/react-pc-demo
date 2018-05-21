@@ -1,3 +1,4 @@
 
 .section{ padding: 20px 0; border-top: 1px solid #ddd;}
 .section:nth-child(1){ border: none;}
+.header{ font-size: 24px; font-weight: bold;}
