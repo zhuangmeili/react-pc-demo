@@ -1,0 +1,5 @@
+.item{
+    line-height: 40px; font-size: 14px;
+    color: #333; border-bottom: 1px solid #ddd;}
+.delete{
+    color: #f00; text-decoration: underline;}

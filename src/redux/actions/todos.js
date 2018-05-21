@@ -7,32 +7,39 @@
  *
  * */
 
+import {
+  TODO_ADD,
+  TODO_TOGGLE,
+  TODO_SET_FILTER,
+  TODO_SHOW_ALL,
+  TODO_SHOW_DELETED,
+  TODO_SHOW_NODELETE
+} from '../actionTypes';
+
 // 添加todo
-let todoId=0; //动态生成的id
-const addTodo=(text)=>{
-    return {
-        type:'ADD_TODO',
-        id:todoId,
-        text
-    }
+let todoId = 0; //动态生成的id
+export const todoAdd = (text) => {
+  return {
+    type: TODO_ADD,
+    id: todoId++,
+    text
+  }
 };
 
-//过滤数据
-const setVisibility=(filter)=>{
-    return {
-        type:'SET_VISIBILITY',
-        filter
-    }
+export const todoToggle = (id) => {
+  return {
+    type: TODO_TOGGLE,
+    id
+  }
 };
 
-//
-const  toggleTodo=(id)=>{
-    return{
-        type:'TOGGLE_TODO',
-        id
-    }
+// 所有的过滤器
+export const todoFilters=()=>{
+  return {
+    TODO_SHOW_ALL:TODO_SHOW_ALL,
+    TODO_SHOW_DELETED:TODO_SHOW_DELETED,
+    TODO_SHOW_NODELETE:TODO_SHOW_NODELETE
+  }
 };
 
-
-export { addTodo,setVisibility,toggleTodo};
 
